@@ -1,16 +1,16 @@
-import React from 'react'
-import { Avatar, IconButton } from '@material-ui/core'
-import { Add } from '@material-ui/icons'
-import './SearchContactCard.css'
+import React from 'react';
+import { Avatar, IconButton } from '@material-ui/core';
+import { Add } from '@material-ui/icons';
+import './SearchContactCard.css';
 
-export default function SearchContactCard() {
-  const user = {
-    "userId": 1234,
-    "fullName": "Gina Snelly",
-    "profileImageUrl": "https://randomuser.me/api/portraits/women/55.jpg",
-    "trust": 75
-  }
+interface ContactProps {
+  userId: number,
+  fullName: string,
+  profileImageUrl: string,
+  trust:number
+}
 
+export default function SearchContactCard(props: ContactProps) {
   return (
     <div className="search-contact">
       <section className="contact-container">
@@ -18,15 +18,15 @@ export default function SearchContactCard() {
           <div className="contact-avatar-box">
             <div>
               <div className="contact-avatar-art">
-                <Avatar className="contact-avatar" src={user.profileImageUrl} />
+                <Avatar className="contact-avatar" src={props.profileImageUrl} />
               </div>
               <div className="contact-trust">
-                <div>{user.trust}</div>
+                <div>{props.trust}</div>
               </div>
             </div>
 
             <div className="contact-details">
-              <h3>Gina Snelly</h3>
+              <h3>{props.fullName}</h3>
               <div className="contact-status">
                 nessuna connessione
               </div>
@@ -44,5 +44,5 @@ export default function SearchContactCard() {
         </div>
       </section>
     </div>
-  )
+  );
 }
