@@ -12,7 +12,7 @@ interface ContactProps {
 
 export default function SearchContactCard(props: ContactProps) {
   return (
-    <div className="search-contact">
+    <div key={props.userId} className="search-contact">
       <section className="contact-container">
         <div className="contact-inner">
           <div className="contact-avatar-box">
