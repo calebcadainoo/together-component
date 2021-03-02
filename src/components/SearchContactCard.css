@@ -1,0 +1,104 @@
+
+
+.search-contact{
+  font-size: 14px;
+  width: 100%;
+  max-width: 362.02px;
+}
+
+.contact-inner{
+  height: 81px;
+  background: var(--app-fore-color);
+  padding: 13px 10px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* avatar */
+.contact-avatar-box{
+  position: relative;
+  display: flex;
+}
+
+.contact-avatar-art{
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  background-image: url(./arc.svg);
+  background-repeat: no-repeat;
+  background-size: 89px;
+  background-position: center;
+  transform: translateY(-37px);
+  -webkit-transform: translateY(-37px);
+}
+
+.contact-avatar{
+  width: 80px !important;
+  height: 80px !important;
+  position: relative;
+  padding: 3px;
+}
+
+.contact-avatar > img {
+  border-radius: 50%;
+}
+
+/* trust */
+.contact-trust{
+  min-width: 27.74px;
+  min-height: 27.74px;
+  flex-shrink: 0;
+  background: var(--app-theme-color);
+  color: var(--app-fore-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  position: absolute;
+  top: -77%;
+  left: 35px;
+}
+
+/* details */
+.contact-details{
+  padding-left: 10px;
+}
+
+.contact-details h3{
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* status */
+.contact-status{
+  line-height: 21px;
+  opacity: 0.51;
+  white-space: nowrap;
+}
+
+/* add button */
+.soft-back{
+  background: var(--app-soft-theme-color);
+}
+
+.contact-btn-add{
+  width: 46.68px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--app-theme-color);
+  color: var(--app-theme-color);
+  display: grid;
+  place-items: center;
+}
+
+/* extras */
+.contact-extras{
+  text-align: center;
+  padding: 10px 26px;
+  color: var(--app-theme-color);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+}
